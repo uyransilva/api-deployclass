@@ -10,4 +10,6 @@ app.get('/', async ( req, res ) => {
 
 const port = process.env.PORTA || 3000;
 
-app.listen(process.env.PORTA)
+app.listen(port, () => {
+    console.log('Servidor funcionando na porta 3000');
+})

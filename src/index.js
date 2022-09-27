@@ -8,4 +8,6 @@ app.get('/', async ( req, res ) => {
     return res.json('Api ok!')
 })
 
+const port = process.env.PORTA || 3000;
+
 app.listen(process.env.PORTA)
